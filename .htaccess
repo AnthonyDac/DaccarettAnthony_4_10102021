@@ -1,13 +1,13 @@
 # BEGIN Cache-Control Headers
 <IfModule mod_headers.c>
 <FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz|webp)$">
-Header set Cache-Control "max-age=2592000, public"
+Header set Cache-Control: "max-age=31536000, public"
 </FilesMatch>
 <FilesMatch "\.(js)$">
-Header set Cache-Control "max-age=2592000, private"
+Header set Cache-Control: "max-age=31536000, private"
 </FilesMatch>
 <filesMatch "\.(html|htm)$">
-Header set Cache-Control "max-age=7200, public"
+Header set Cache-Control: "max-age=31536000, public"
 </filesMatch>
 # Enleve le cache pour les ressources dynamiques
 <FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
@@ -30,5 +30,9 @@ ExpiresByType text/x-javascript "access plus 1 month"
 ExpiresByType application/x-shockwave-flash "access plus 1 month"
 ExpiresByType image/x-icon "access plus 1 year"
 ExpiresDefault "access plus 2 days"
+ExpiresByType application/x-font-ttf "access plus 1 month"
+ExpiresByType font/opentype "access plus 1 month"
+ExpiresByType application/x-font-woff "access plus 1 month"
+ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
 </IfModule>
 # END Expires Headers
