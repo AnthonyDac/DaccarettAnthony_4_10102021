@@ -661,6 +661,11 @@ a[data-lightbox]:hover img {
     margin: auto auto auto auto;
 }
 
+.logo {
+    width: 20%;
+    height: auto;
+}
+
 p {
     font-size: 13px;
 }
