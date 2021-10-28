@@ -826,8 +826,11 @@ h4 {
 }
 
 .title-bloc {
-    width: 100%;
-    font-size: 20px;
+    width: 80%;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    margin: auto;
 }
 
 .containerCitation {
