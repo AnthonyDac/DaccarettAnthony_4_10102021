@@ -510,6 +510,15 @@ button {
     box-shadow: none;
 }
 
+.form-group label {
+    color: black;
+}
+
+.adresse {
+    color: black;
+    font-size: 16px;
+}
+
 .scrollToTop {
     width: 40px;
     height: 40px;
